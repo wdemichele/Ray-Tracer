@@ -1,20 +1,7 @@
-# COMP30019 Assignment 1 - Ray Tracer
-This is your README.md... you should write anything relevant to your implementation here.
+# Ray Tracer
 
-Please ensure your student details are specified below (*exactly* as on UniMelb records):
-
-**Name:** William De Michele \
-**Student Number:** 1071003 \
-**Username:** wdemichele \
-**Email:** wdemichele@student.unimelb.edu.au
-
-## Completed stages
-
-Tick the stages bellow that you have completed so we know what to mark (by editing README.md). At most **six** marks can be chosen in total for stage three. If you complete more than this many marks, pick your best one(s) to be marked!
-
-<!---
-Tip: To tick, place an x between the square brackes [ ], like so: [x]
--->
+**Ray tracing** is a method of graphics rendering that simulates the physical behavior of light.
+Light and graphic effects were implemented in stages as follows
 
 ##### Stage 1
 
@@ -41,29 +28,8 @@ Tip: To tick, place an x between the square brackes [ ], like so: [x]
 - [x] Option D - Glossy materials (+3)
 - [ ] Option E - Custom camera orientation (+3)
 - [x] Option F - Beer's law (+3)
-- [ ] Option G - Depth of field (+3)
+- [x] Option G - Depth of field (+3)
 
-*Please summarise your approach(es) to stage 3 here.*
-
-
-
-## Final scene render
-
-Be sure to replace ```/images/final_scene.png``` with your final render so it shows up here:
-
-![My final render](/images/final_scene.png)
-
-This render took 2 minutes and 15 seconds on my PC.
-
-I used the following command to render the image exactly as shown:
-
-```
-dotnet run -- -f tests/final_scene.txt -o images/final_scene.png -x 4
-```
-
-## Sample outputs
-
-We have provided you with some sample tests located at ```/tests/*```. So you have some point of comparison, here are the outputs our ray tracer solution produces for given command line inputs (for the first two stages, left and right respectively):
 
 ###### Sample 1
 ```
@@ -86,23 +52,10 @@ dotnet run -- -f tests/sample_scene_2.txt -o images/sample_scene_2.png -x 4
 
 ## References
 
-*You must list any references you used!*
-
-Mostly just Scratchapixel
-Also 1000formsofbunnies: https://viclw17.github.io/
-A simple ray tracer: https://www.codeproject.com/Articles/19732/Simple-Ray-Tracing-in-C
-Basic ray tracing: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fwww.cs.toronto.edu%2F~kyros%2Fcourses%2F418%2FNotes%2FBasicRayTracing.pdf&clen=92078&chunk=true
-Ray tracing in a weekend
-
-
-To get you started, here is some good reading material:
-
-Working through a ray tracer, from the head of the xbox games studio: https://www.linkedin.com/pulse/writing-simple-ray-tracer-c-matt-booty/
-
-*Ray Tracing in a Weekend*: https://raytracing.github.io/
-
-Great walkthrough of some of the basic maths: https://blog.scottlogic.com/2020/03/10/raytracer-how-to.html
-
-Scratchapixel: intro to ray tracing: https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work
-
-# Graphics-and-Interaction-COMP30019-2021---project-1-ray-tracer-wdemichele
+- Scratchapixel: intro to ray tracing: https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work
+- Also 1000formsofbunnies: https://viclw17.github.io/
+- A simple ray tracer: https://www.codeproject.com/Articles/19732/Simple-Ray-Tracing-in-C
+- Basic ray tracing: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?--pdfurl=http%3A%2F%2Fwww.cs.toronto.edu%2F~kyros%2Fcourses%2F418%2FNotes%2FBasicRayTracing.pdf&clen=92078&chunk=true
+- *Ray Tracing in a Weekend*: https://raytracing.github.io/
+- Working through a ray tracer, from the head of the xbox games studio: https://www.linkedin.com/pulse/writing-simple-ray-tracer-c-matt-booty/
+- Great walkthrough of some of the basic maths: https://blog.scottlogic.com/2020/03/10/raytracer-how-to.html
