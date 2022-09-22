@@ -1,0 +1,73 @@
+
+Material "GreyMat" Diffuse (.5, .5, .5) 1
+Material "RedMat" Diffuse (1, .5, .5) 1
+Material "GreenMat" Diffuse (.5, 1, .5) 1
+Material "BlueMat" Diffuse (.5, .5, 1) 1
+Material "GlassMat" Refractive (1, 1, 1) 1.4
+Material "MirrorMat" Reflective (1, 1, 1) 1
+
+Material "GlossMatBrown" Glossy (0.588, 0.294, 0) 1
+Material "BrownMat" Diffuse (0.588, 0.294, 0) 1
+Material "BlackMat" Diffuse (0, 0, 0) 1
+Material "YellowMat" Diffuse (1, 1, 0) 1
+Material "WhiteMat" Diffuse (1, 1, 1) 1
+
+
+Material "PinkMat" Diffuse (0.88, 0.26, 0.5) 1
+Material "OrangeMat" Diffuse (0.89, 0.47, 0.2) 1
+Material "DarkBlueMat" Diffuse (0.31, 0.41, 0.53) 1
+Material "SeaGreenMat" Diffuse (0.02, 0.52, 0.51) 1
+
+
+
+
+PointLight "Light1" (0, 0.8, 1.5) (.5, .5, .5)
+PointLight "Light2" (-0.5, 0.2, 0.5) (.5, .5, .5)
+PointLight "Light3" (0.5, 0.2, 0.5) (.5, .5, .5)
+
+Plane "Floor" (0, -1, 0) (0, 1, 0) "GreyMat"
+Plane "Roof" (0, 1, 0) (0, -1, 0) "GreyMat"
+
+Sphere "Eye1" (-0.3, 0.3, 2) 0.25 "MirrorMat"
+Sphere "Eye2" (0.3, 0.3, 2) 0.25 "MirrorMat"
+Sphere "Pupil1" (-0.15, 0.15, 1.1) 0.05 "BrownMat"
+Sphere "Pupil2" (0.15, 0.15, 1.1) 0.05 "BrownMat"
+
+Triangle "SmileLeft" (-0.9, -0.2, 2.8) (0, -0.2, 2.8) (0, -0.9, 2.8) "BlackMat"
+Triangle "SmileRight" (0, -0.2, 2.8) (0.9, -0.2, 2.8) (0, -0.9, 2.8)  "BlackMat"
+
+Sphere "Tongue" (0.25, -0.6, 2.7) .3 "RedMat"
+
+Sphere "Tooth2" (0.73, -0.25, 2.7) 0.05 "WhiteMat"
+
+Sphere "Tooth4" (0.51, -0.25, 2.7) 0.05 "WhiteMat"
+Sphere "Tooth5" (0.40, -0.25, 2.7) 0.05 "YellowMat"
+Sphere "Tooth6" (0.29, -0.25, 2.7) 0.07 "WhiteMat"
+Sphere "Tooth7" (0.11, -0.25, 2.7) 0.09 "WhiteMat"
+
+Sphere "Tooth9" (-0.73, -0.25, 2.7) 0.05 "WhiteMat"
+Sphere "Tooth10" (-0.62, -0.25, 2.7) 0.05 "YellowMat"
+Sphere "Tooth11" (-0.51, -0.25, 2.7) 0.05 "WhiteMat"
+
+Sphere "Tooth13" (-0.29, -0.25, 2.7) 0.07 "WhiteMat"
+Sphere "Tooth14" (-0.11, -0.25, 2.7) 0.09 "WhiteMat"
+
+Triangle "EyebrowLeft" (-0.7, 0.4, 2) (-0.3, 0.7, 2) (0, 0.8, 2) "BrownMat"
+Triangle "EyebrowRight" (0.7, 0.4, 2) (0, 0.8, 2) (0.3, 0.7, 2) "BrownMat"
+
+Triangle "MoLeft" (-0.7, -0.25, 2) (-0.3, 0.05, 2) (0, -0.05, 2) "BrownMat"
+Triangle "MoRight" (0.7, -0.25, 2) (0, -0.05, 2) (0.3, 0.05, 2) "BrownMat"
+
+
+Triangle "LeftWallA" (-1, -1, 0) (-1, 1, 0) (-1, 1, 3) "OrangeMat"
+Triangle "LeftWallB" (-1, -1, 0) (-1, 1, 3) (-1, -1, 3)  "DarkBlueMat"
+
+Triangle "RightWallA" (1, 1, 0) (1, -1, 0) (1, 1, 3) "PinkMat"
+Triangle "RightWallB" (1, 1, 3) (1, -1, 0) (1, -1, 3)  "SeaGreenMat"
+
+Triangle "RearWallA" (-1, 1, 0) (-1, -1, 0) (1, 1, 0) "BlueMat"
+Triangle "RearWallB" (1, 1, 0) (-1, -1, 0) (1, -1, 0) "BlueMat"
+
+Triangle "FarWallA" (-1, -1, 3) (-1, 1, 3) (1, 1, 3) "GreenMat"
+Triangle "FarWallB" (-1, -1, 3) (1, 1, 3) (1, -1, 3) "GreenMat"
+
